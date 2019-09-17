@@ -1,14 +1,13 @@
 import React from 'react';
 import { PDFDownloadLink } from '@react-pdf/renderer';
-import { PdfDocument } from './Movie';
+import { GamePdf } from './GamePdf';
 
-export default function MovieList() {
+export default function Game() {
   return (
-    <div className='container'>
-      <h2>a</h2>
-
+    <React.Fragment>
+      <h2></h2>
       <PDFDownloadLink
-        document={<PdfDocument />}
+        document={<GamePdf />}
         fileName='movielist.pdf'
         style={{
           textDecoration: 'none',
@@ -18,8 +17,8 @@ export default function MovieList() {
           border: '1px solid #4a4a4a'
         }}
       >
-        Download Pdf
+        Download Engage prototype
       </PDFDownloadLink>
-    </div>
+    </React.Fragment>
   );
 }

@@ -1,23 +1,14 @@
-import React from "react";
-import {
-  Page,
-  Text,
-  View,
-  Document,
-  StyleSheet,
-  PDFViewer
-} from "@react-pdf/renderer";
-import ReactPDF from "@react-pdf/renderer";
+import React from 'react';
 
-import "./App.css";
-import MovieList from "./MovieList";
-import Abc from "./Abc";
-import { ReactDOM } from "react-dom";
+import './App.css';
+import MovieList from './MovieList';
+import Game from './Game';
 
 function App() {
   return (
-    <div className="App">
-      <MovieList />
+    <div className='App'>
+      {/* <MovieList /> */}
+      <Game />
     </div>
   );
 }
