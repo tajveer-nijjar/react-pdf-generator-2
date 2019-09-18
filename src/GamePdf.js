@@ -77,6 +77,46 @@ export function GamePdf(props) {
                     })}
                   </View>
                 </View>
+                <View style={styles.section}>
+                  <Text style={styles.pg2Headings}>What you need</Text>
+                  <View style={styles.directions}>
+                    {data.teacherInstruction.map((instruction, index) => {
+                      return (
+                        <Text style={styles.singleDirection}>
+                          <Text style={styles.blueNumbering}>.</Text>
+                          {instruction}
+                        </Text>
+                      );
+                    })}
+                  </View>
+                </View>
+                <View style={styles.section}>
+                  <Text style={styles.pg2Headings}>Variations</Text>
+                  <Text style={styles.orangeRoundBox}>COGNITIVE</Text>
+                  <View style={styles.directions}>
+                    {data.variations.cognitive.map((variation, index) => {
+                      return (
+                        <Text style={styles.singleDirection}>
+                          <Text style={styles.orangeNumbering}>
+                            {index + 1}.
+                          </Text>
+                          {variation}
+                        </Text>
+                      );
+                    })}
+                  </View>
+                  <View style={styles.directions}>
+                    <Text style={styles.blueRoundBox}>COGNITIVE</Text>
+                    {data.variations.behavioural.map((variation, index) => {
+                      return (
+                        <Text style={styles.singleDirection}>
+                          <Text style={styles.blueNumbering}>{index + 1}.</Text>
+                          {variation}
+                        </Text>
+                      );
+                    })}
+                  </View>
+                </View>
               </View>
             </View>
           </View>

@@ -73,7 +73,8 @@ const styles = StyleSheet.create({
     display: 'flex',
     flexDirection: 'row',
     padding: 5,
-    height: '100%'
+    height: '100%',
+    fontSize: 16
   },
   page2Details: {
     display: 'flex',
@@ -83,7 +84,7 @@ const styles = StyleSheet.create({
     width: 570
   },
   section: {
-    margin: '30px 20px 20px 20px'
+    margin: '20px 20px 20px 20px'
     // margin: '30px 0 10px 20px',
   },
   pg2Headings: {
@@ -98,10 +99,25 @@ const styles = StyleSheet.create({
   blueNumbering: {
     color: '#0070a2'
   },
+  orangeNumbering: {
+    color: 'orange'
+  },
   requirement: {
     // border: '1pt solid gray',
     backgroundColor: 'gray',
-    borderRadius: 10
+    borderRadius: 10,
+    paddingLeft: 10
+  },
+  orangeRoundBox: {
+    backgroundColor: 'orange',
+    borderRadius: 10,
+    paddingLeft: 10
+  },
+  blueRoundBox: {
+    marginTop: 10,
+    backgroundColor: '#0070a2',
+    borderRadius: 10,
+    paddingLeft: 10
   }
 
   //////////////////////////////////////////////////////////////////////////
