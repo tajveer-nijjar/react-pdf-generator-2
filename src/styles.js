@@ -111,13 +111,15 @@ const styles = StyleSheet.create({
   orangeRoundBox: {
     backgroundColor: 'orange',
     borderRadius: 10,
-    paddingLeft: 10
+    paddingLeft: 10,
+    color: 'white'
   },
   blueRoundBox: {
     marginTop: 10,
     backgroundColor: '#0070a2',
     borderRadius: 10,
-    paddingLeft: 10
+    paddingLeft: 10,
+    color: 'white'
   }
 
   //////////////////////////////////////////////////////////////////////////
