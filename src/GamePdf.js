@@ -69,7 +69,7 @@ export function GamePdf(props) {
                 </View>
                 <View style={styles.section}>
                   <Text style={styles.pg2Headings}>What you need</Text>
-                  <View>
+                  <View styke={styles.requirementsContainer}>
                     {data.requirements.map((requirement, index) => {
                       return (
                         <Text style={styles.requirement}>{requirement}</Text>
@@ -106,7 +106,7 @@ export function GamePdf(props) {
                     })}
                   </View>
                   <View style={styles.directions}>
-                    <Text style={styles.blueRoundBox}>COGNITIVE</Text>
+                    <Text style={styles.blueRoundBox}>BEHAVIOURAL</Text>
                     {data.variations.behavioural.map((variation, index) => {
                       return (
                         <Text style={styles.singleDirection}>

@@ -102,24 +102,34 @@ const styles = StyleSheet.create({
   orangeNumbering: {
     color: 'orange'
   },
+  requirementsContainer: {
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center'
+  },
   requirement: {
     // border: '1pt solid gray',
     backgroundColor: 'gray',
     borderRadius: 10,
-    paddingLeft: 10
+    paddingLeft: 10,
+    flex: 1
   },
+
   orangeRoundBox: {
     backgroundColor: 'orange',
     borderRadius: 10,
     paddingLeft: 10,
-    color: 'white'
+    color: 'white',
+    width: '20%'
   },
   blueRoundBox: {
     marginTop: 10,
     backgroundColor: '#0070a2',
     borderRadius: 10,
     paddingLeft: 10,
-    color: 'white'
+    color: 'white',
+    width: '25%'
   }
 
   //////////////////////////////////////////////////////////////////////////
