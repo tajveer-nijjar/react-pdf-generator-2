@@ -133,34 +133,6 @@ export function GamePdf(props) {
                 <Text style={styles.gameLevel}>{`LEVEL ${data.level}`}</Text>
                 <Image source='./game_snapshot.jpg' style={styles.appLogo2} />
               </View>
-
-              {/* <View style={styles.subtitle}>
-                      <View style={styles.vote}>
-                        <Image source='star.png' style={styles.rating} />
-                        <Text style={styles.vote_text}>{a.vote_count}</Text>
-                      </View>
-                      <View style={styles.vote}>
-                        <Text style={styles.vote_pop}>{a.popularity}</Text>
-                        <Text style={styles.vote_pop_text}>Popularity</Text>
-                      </View>
-                    </View>
-                    <View style={styles.overviewContainer}>
-                      <Text style={styles.movieOverview}>{a.overview}</Text>
-                    </View>
-                    <View style={styles.detailsFooter}>
-                      <Text style={styles.lang}>
-                        Language: {a.original_language.toUpperCase()}
-                      </Text>
-                      <Text style={styles.vote_average}>
-                        Average Votes: {a.vote_average}
-                      </Text>
-                      <Text style={styles.vote_average}>
-                        Release Date:{' '}
-                        {moment(a.release_date, 'YYYY-MM-DD').format(
-                          ' MMMM D Y'
-                        )}
-                      </Text>
-                    </View> */}
             </View>
           </View>
         </Page>
