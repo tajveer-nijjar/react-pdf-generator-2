@@ -7,7 +7,6 @@ import {
   StyleSheet,
   Image
 } from '@react-pdf/renderer';
-import moment from 'moment';
 
 import styles from './styles';
 
@@ -70,18 +69,23 @@ const CreateData = () => {
 };
 
 export function GamePdf(props) {
-  console.log('pdf props', props.data);
   const data = CreateData();
   return (
-    <Document>
-      <Page style={styles.page}>
-        {data
-          ? data.map((a, index) => {
-              return (
-                <View key={index} style={styles.movieContainer}>
-                  <View style={styles.movieDetails}>
-                    <Text style={styles.movieTitle}>{a.title}</Text>
-                    <View style={styles.subtitle}>
+    <React.Fragment>
+      <Document>
+        <Page style={styles.page}>
+          <View style={styles.gameContainer}>
+            <View style={styles.gameDetails}>
+              <Text style={styles.gameTitle}>{data.title}</Text>
+              <Image
+                // source='https://image.flaticon.com/icons/png/512/3/3901.png'
+                source='./game_snapshot.jpg'
+                style={styles.gameImage}
+              />
+              <Text>{data.description}</Text>
+              {/* <img src='' alt='' /> */}
+
+              {/* <View style={styles.subtitle}>
                       <View style={styles.vote}>
                         <Image source='star.png' style={styles.rating} />
                         <Text style={styles.vote_text}>{a.vote_count}</Text>
@@ -107,13 +111,12 @@ export function GamePdf(props) {
                           ' MMMM D Y'
                         )}
                       </Text>
-                    </View>
-                  </View>
-                </View>
-              );
-            })
-          : ''}
-      </Page>
-    </Document>
+                    </View> */}
+            </View>
+          </View>
+        </Page>
+        {/* <Page></Page> */}
+      </Document>
+    </React.Fragment>
   );
 }

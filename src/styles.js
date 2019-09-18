@@ -9,19 +9,26 @@ const styles = StyleSheet.create({
     padding: 10,
     flexGrow: 1
   },
-  movieContainer: {
+  gameContainer: {
     backgroundColor: '#f6f6f5',
     display: 'flex',
     flexDirection: 'row',
-    padding: 5
+    padding: 5,
+    height: '100%'
   },
-  movieDetails: {
+  gameDetails: {
     display: 'flex',
     marginLeft: 5
   },
-  movieTitle: {
-    fontSize: 15,
-    marginBottom: 10
+  gameTitle: {
+    fontSize: 30,
+    marginBottom: 10,
+    color: '#0070a2',
+    textAlign: 'center'
+  },
+  gameImage: {
+    height: 300,
+    width: 600
   },
   movieOverview: {
     fontSize: 10
