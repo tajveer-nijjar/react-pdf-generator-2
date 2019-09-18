@@ -4,7 +4,7 @@ import {
   Text,
   View,
   Document,
-  StyleSheet,
+  // StyleSheet,
   Image
 } from '@react-pdf/renderer';
 
@@ -77,13 +77,10 @@ export function GamePdf(props) {
           <View style={styles.gameContainer}>
             <View style={styles.gameDetails}>
               <Text style={styles.gameTitle}>{data.title}</Text>
-              <Image
-                // source='https://image.flaticon.com/icons/png/512/3/3901.png'
-                source='./game_snapshot.jpg'
-                style={styles.gameImage}
-              />
-              <Text>{data.description}</Text>
-              {/* <img src='' alt='' /> */}
+              <Image source='./pepsi.png' style={styles.appLogo} />
+              <Image source='./game_snapshot.jpg' style={styles.gameImage} />
+              <Text style={styles.gameDescription}>{data.description}</Text>
+              <Text style={styles.gameLevel}>{`LEVEL ${data.level}`}</Text>
 
               {/* <View style={styles.subtitle}>
                       <View style={styles.vote}>

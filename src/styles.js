@@ -10,7 +10,7 @@ const styles = StyleSheet.create({
     flexGrow: 1
   },
   gameContainer: {
-    backgroundColor: '#f6f6f5',
+    // backgroundColor: '#f6f6f5',
     display: 'flex',
     flexDirection: 'row',
     padding: 5,
@@ -18,18 +18,40 @@ const styles = StyleSheet.create({
   },
   gameDetails: {
     display: 'flex',
-    marginLeft: 5
+    marginLeft: 5,
+    border: '5pt solid #0070a2',
+    borderRadius: 10
   },
   gameTitle: {
+    marginTop: 30,
     fontSize: 30,
     marginBottom: 10,
     color: '#0070a2',
     textAlign: 'center'
   },
   gameImage: {
-    height: 300,
-    width: 600
+    height: 400,
+    width: 570
   },
+  gameDescription: {
+    textAlign: 'center',
+    fontSize: 20,
+    marginTop: 30,
+    marginLeft: 25,
+    width: 520
+  },
+  gameLevel: {
+    fontWeight: 800,
+    color: '#0070a2',
+    textAlign: 'center',
+    marginTop: 100
+  },
+  appLogo: {
+    height: 100,
+    width: 100,
+    border: '1pt solid red'
+  },
+  //////////////////////////////////////////////////////////////////////////
   movieOverview: {
     fontSize: 10
   },
