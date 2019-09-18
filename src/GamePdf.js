@@ -54,16 +54,28 @@ export function GamePdf(props) {
           <View style={styles.page}>
             <View style={styles.page2Container}>
               <View style={styles.page2Details}>
-                <Text style={styles.pg2Headings}>How to play</Text>
-                <View style={styles.directions}>
-                  {data.directions.map((direction, index) => {
-                    return (
-                      <Text style={styles.singleDirection}>
-                        <Text style={styles.blueNumbering}>{index + 1}.</Text>{' '}
-                        {direction}
-                      </Text>
-                    );
-                  })}
+                <View style={styles.section}>
+                  <Text style={styles.pg2Headings}>How to play</Text>
+                  <View style={styles.directions}>
+                    {data.directions.map((direction, index) => {
+                      return (
+                        <Text style={styles.singleDirection}>
+                          <Text style={styles.blueNumbering}>{index + 1}.</Text>
+                          {direction}
+                        </Text>
+                      );
+                    })}
+                  </View>
+                </View>
+                <View style={styles.section}>
+                  <Text style={styles.pg2Headings}>What you need</Text>
+                  <View>
+                    {data.requirements.map((requirement, index) => {
+                      return (
+                        <Text style={styles.requirement}>{requirement}</Text>
+                      );
+                    })}
+                  </View>
                 </View>
               </View>
             </View>

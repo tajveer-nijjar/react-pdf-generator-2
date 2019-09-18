@@ -78,25 +78,30 @@ const styles = StyleSheet.create({
   page2Details: {
     display: 'flex',
     marginLeft: 5,
-    border: '5pt solid #0070a2',
+    // border: '5pt solid #0070a2',
     borderRadius: 10,
     width: 570
   },
-
+  section: {
+    margin: '30px 20px 20px 20px'
+    // margin: '30px 0 10px 20px',
+  },
   pg2Headings: {
-    margin: '30px 0 10px 20px',
     color: '#0070a2',
     textTransform: 'uppercase',
     fontSize: 14
   },
-  directions: {
-    margin: '0 20px 20px 20px'
-  },
+  directions: {},
   singleDirection: {
     margin: 4
   },
   blueNumbering: {
     color: '#0070a2'
+  },
+  requirement: {
+    // border: '1pt solid gray',
+    backgroundColor: 'gray',
+    borderRadius: 10
   }
 
   //////////////////////////////////////////////////////////////////////////
