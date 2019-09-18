@@ -4,11 +4,7 @@ const styles = StyleSheet.create({
   page: {
     backgroundColor: '#ffffff'
   },
-  section: {
-    margin: 10,
-    padding: 10,
-    flexGrow: 1
-  },
+
   gameContainer: {
     // backgroundColor: '#f6f6f5',
     display: 'flex',
@@ -40,17 +36,40 @@ const styles = StyleSheet.create({
     marginLeft: 25,
     width: 520
   },
+  //////////////////////////////////////////////////////////////////////////
+
+  footerContainer: {
+    display: 'flex',
+    border: '1pt solid red',
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginTop: 100
+  },
   gameLevel: {
     fontWeight: 800,
     color: '#0070a2',
+    border: '1pt solid red',
     textAlign: 'center',
-    marginTop: 100
+    width: '20%'
+    // flex: 1
+    // order: 1
   },
-  appLogo: {
-    height: 100,
-    width: 100,
-    border: '1pt solid red'
+  appLogo1: {
+    height: 50,
+    border: '1pt solid red',
+    width: '20%'
+    // flex: 1
+    // order: 2
   },
+  appLogo2: {
+    height: 50,
+    border: '1pt solid red',
+    width: '20%'
+    // flex: 1
+    // order: 2
+  },
+
   //////////////////////////////////////////////////////////////////////////
   movieOverview: {
     fontSize: 10
