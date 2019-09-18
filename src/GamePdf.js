@@ -18,35 +18,12 @@ const CreateData = () => {
       ' This game is like tag, but when a child is tagged they freeze still with their legs apart to make a tunnel. To be unfrozen another child has to crawl through their legs',
     level: 2,
     directions: [
-      {
-        pointNumber: 1,
-        pointDescription: 'One child is picked to be the giant'
-      },
-      {
-        pointNumber: 2,
-        pointDescription:
-          "The giant stands at one end of the room with their back to the other children, and a piece of 'treasure' placed under their legs."
-      },
-      {
-        pointNumber: 3,
-        pointDescription:
-          'The other children mush creep towards the giant and try to take the treasure.'
-      },
-      {
-        pointNumber: 4,
-        pointDescription:
-          'If the giant turns around, the other children must freeze.'
-      },
-      {
-        pointNumber: 5,
-        pointDescription:
-          "If a child is caught moving once the giant turns around they are 'out'(and can either go back to the start line, or wait until the next)"
-      },
-      {
-        pointNumber: 6,
-        pointDescription:
-          'The child who eventually captures the treasure becomes the giant, and the game starts over again.'
-      }
+      'One child is picked to be the giant',
+      "The giant stands at one end of the room with their back to the other children, and a piece of 'treasure' placed under their legs.",
+      'The other children mush creep towards the giant and try to take the treasure.',
+      'If the giant turns around, the other children must freeze.',
+      "If a child is caught moving once the giant turns around they are 'out'(and can either go back to the start line, or wait until the next)",
+      'The child who eventually captures the treasure becomes the giant, and the game starts over again.'
     ],
     requirements: ["A 'treasure' item for the giant", 'A large play area'],
     teacherInstruction: [
@@ -73,11 +50,26 @@ export function GamePdf(props) {
   return (
     <React.Fragment>
       <Document>
-        {/* <Page>
-          <View style={styles.}>
-
+        <Page>
+          <View style={styles.page}>
+            <View style={styles.page2Container}>
+              <View style={styles.page2Details}>
+                <Text style={styles.pg2Headings}>How to play</Text>
+                <View style={styles.directions}>
+                  {data.directions.map((direction, index) => {
+                    return (
+                      <Text style={styles.singleDirection}>
+                        <Text style={styles.blueNumbering}>{index + 1}.</Text>{' '}
+                        {direction}
+                      </Text>
+                    );
+                  })}
+                </View>
+              </View>
+            </View>
           </View>
-        </Page> */}
+        </Page>
+
         <Page style={styles.page}>
           <View style={styles.gameContainer}>
             <View style={styles.gameDetails}>
