@@ -50,6 +50,20 @@ export function GamePdf(props) {
   return (
     <React.Fragment>
       <Document>
+        <Page style={styles.page}>
+          <View style={styles.gameContainer}>
+            <View style={styles.gameDetails}>
+              <Text style={styles.gameTitle}>{data.title}</Text>
+              <Image source='./game_snapshot.jpg' style={styles.gameImage} />
+              <Text style={styles.gameDescription}>{data.description}</Text>
+              <View style={styles.footerContainer}>
+                <Image source='./game_snapshot.jpg' style={styles.appLogo1} />
+                <Text style={styles.gameLevel}>{`LEVEL ${data.level}`}</Text>
+                <Image source='./game_snapshot.jpg' style={styles.appLogo2} />
+              </View>
+            </View>
+          </View>
+        </Page>
         <Page>
           <View style={styles.page}>
             <View style={styles.page2Container}>
@@ -117,21 +131,6 @@ export function GamePdf(props) {
                     })}
                   </View>
                 </View>
-              </View>
-            </View>
-          </View>
-        </Page>
-
-        <Page style={styles.page}>
-          <View style={styles.gameContainer}>
-            <View style={styles.gameDetails}>
-              <Text style={styles.gameTitle}>{data.title}</Text>
-              <Image source='./game_snapshot.jpg' style={styles.gameImage} />
-              <Text style={styles.gameDescription}>{data.description}</Text>
-              <View style={styles.footerContainer}>
-                <Image source='./game_snapshot.jpg' style={styles.appLogo1} />
-                <Text style={styles.gameLevel}>{`LEVEL ${data.level}`}</Text>
-                <Image source='./game_snapshot.jpg' style={styles.appLogo2} />
               </View>
             </View>
           </View>

@@ -113,7 +113,8 @@ const styles = StyleSheet.create({
     backgroundColor: 'gray',
     borderRadius: 10,
     paddingLeft: 10,
-    flex: 1
+    flex: 1,
+    width: '50%'
   },
 
   orangeRoundBox: {
